@@ -593,7 +593,7 @@ footer .social-icons a:hover {
     text-shadow: 0 0 10px rgba(255, 65, 108, 0.3);
 }
 
-.download-links .single-links {
+.download-links {
     background: rgba(30, 30, 40, 0.7);
     border-radius: 0 0 15px 15px;
     padding: 20px;
@@ -601,7 +601,7 @@ footer .social-icons a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.download-links .single-links .link-container {
+.download-links .link-container {
     background: rgba(40, 40, 55, 0.5);
     border-radius: 10px;
     padding: 15px;
@@ -610,14 +610,14 @@ footer .social-icons a:hover {
     border-left: 3px solid transparent;
 }
 
-.download-links .single-links .link-container:hover {
+.download-links .link-container:hover {
     background: rgba(255, 65, 108, 0.2);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 65, 108, 0.2);
     border-left-color: #ff416c;
 }
 
-.download-links .single-links .link-container h4 {
+.download-links .link-container h4 {
     color: #e0e0e0;
     margin: 0 0 10px 0;
     font-size: 1rem;
@@ -625,7 +625,7 @@ footer .social-icons a:hover {
     word-break: break-word;
 }
 
-.download-links .single-links .link-container h2 {
+.download-links .link-container h2 {
     color: #ff416c;
     margin: 0;
     font-size: 1.1rem;
@@ -944,7 +944,7 @@ footer .social-icons a:hover {
     }
 }
 /* Download Links Section - Dynamic Links Styling */
-.download-links .single-links {
+.download-links {
     background: rgba(30, 30, 40, 0.7);
     border-radius: 0 0 15px 15px;
     padding: 20px;
@@ -953,7 +953,7 @@ footer .social-icons a:hover {
 }
 
 /* Link Containers Layout */
-.download-links .single-links .link-container {
+.download-links .link-container {
     background: rgba(40, 40, 55, 0.5);
     border-radius: 10px;
     padding: 15px;
@@ -962,7 +962,7 @@ footer .social-icons a:hover {
     border-left: 3px solid transparent;
 }
 
-.download-links .single-links .link-container:hover {
+.download-links .link-container:hover {
     background: rgba(255, 65, 108, 0.2);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 65, 108, 0.2);
@@ -970,7 +970,7 @@ footer .social-icons a:hover {
 }
 
 /* File Info Styling */
-.download-links .single-links .link-container h4 {
+.download-links .link-container h4 {
     color: #e0e0e0;
     margin: 0 0 15px 0;
     font-size: 1rem;
@@ -981,7 +981,7 @@ footer .social-icons a:hover {
 }
 
 /* Links Container for Dynamic Links */
-.download-links .single-links .link-container h2 {
+.download-links .link-container h2 {
     color: #ff416c;
     margin: 0;
     font-size: 1.1rem;
@@ -996,22 +996,22 @@ footer .social-icons a:hover {
 }
 
 /* Single Link Styling (when only one link exists) */
-.download-links .single-links .link-container h2:has(a:only-child) {
+.download-links .link-container h2:has(a:only-child) {
     justify-content: center;
 }
 
-.download-links .single-links .link-container h2:has(a:only-child) .f-links {
+.download-links .link-container h2:has(a:only-child) .f-links {
     min-width: 120px;
     font-size: 1rem;
     padding: 10px 25px;
 }
 
 /* Multiple Links Styling (when 3 links exist) */
-.download-links .single-links .link-container h2:has(a:nth-child(3)) {
+.download-links .link-container h2:has(a:nth-child(3)) {
     justify-content: space-between;
 }
 
-.download-links .single-links .link-container h2:has(a:nth-child(3)) .f-links {
+.download-links .link-container h2:has(a:nth-child(3)) .f-links {
     flex: 1;
     min-width: 100px;
     max-width: 120px;
@@ -1021,19 +1021,19 @@ footer .social-icons a:hover {
 }
 
 /* Two Links Styling */
-.download-links .single-links .link-container h2:has(a:nth-child(2)) {
+.download-links .link-container h2:has(a:nth-child(2)) {
     justify-content: center;
     gap: 20px;
 }
 
-.download-links .single-links .link-container h2:has(a:nth-child(2)) .f-links {
+.download-links .link-container h2:has(a:nth-child(2)) .f-links {
     min-width: 130px;
     font-size: 0.95rem;
     padding: 9px 20px;
 }
 
 /* Dynamic Link Buttons */
-.download-links .single-links .f-links {
+.download-links .f-links {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1053,7 +1053,7 @@ footer .social-icons a:hover {
     overflow: hidden;
 }
 
-.download-links .single-links .f-links::before {
+.download-links .f-links::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1064,56 +1064,56 @@ footer .social-icons a:hover {
     transition: left 0.5s;
 }
 
-.download-links .single-links .f-links:hover::before {
+.download-links .f-links:hover::before {
     left: 100%;
 }
 
-.download-links .single-links .f-links:hover {
+.download-links .f-links:hover {
     background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 65, 108, 0.4);
 }
 
 /* Different colors for different file hosts */
-.download-links .single-links .f-links[href*="gdtot"],
-.download-links .single-links .f-links[href*="gdflix"] {
+.download-links .f-links[href*="gdtot"],
+.download-links .f-links[href*="gdflix"] {
     background: linear-gradient(135deg, #0061ff 0%, #60efff 100%);
     box-shadow: 0 4px 15px rgba(0, 97, 255, 0.3);
 }
 
-.download-links .single-links .f-links[href*="gdtot"]:hover,
-.download-links .single-links .f-links[href*="gdflix"]:hover {
+.download-links .f-links[href*="gdtot"]:hover,
+.download-links .f-links[href*="gdflix"]:hover {
     background: linear-gradient(135deg, #60efff 0%, #0061ff 100%);
     box-shadow: 0 8px 25px rgba(0, 97, 255, 0.4);
 }
 
-.download-links .single-links .f-links[href*="filepress"] {
+.download-links .f-links[href*="filepress"] {
     background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
     box-shadow: 0 4px 15px rgba(0, 176, 155, 0.3);
 }
 
-.download-links .single-links .f-links[href*="filepress"]:hover {
+.download-links .f-links[href*="filepress"]:hover {
     background: linear-gradient(135deg, #96c93d 0%, #00b09b 100%);
     box-shadow: 0 8px 25px rgba(0, 176, 155, 0.4);
 }
 
-.download-links .single-links .f-links[href*="appdrive"] {
+.download-links .f-links[href*="appdrive"] {
     background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
     box-shadow: 0 4px 15px rgba(110, 72, 170, 0.3);
 }
 
-.download-links .single-links .f-links[href*="appdrive"]:hover {
+.download-links .f-links[href*="appdrive"]:hover {
     background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%);
     box-shadow: 0 8px 25px rgba(110, 72, 170, 0.4);
 }
 
 /* Loading State for Dynamic Links */
-.download-links .single-links .link-container.loading h2 {
+.download-links .link-container.loading h2 {
     color: rgba(255, 255, 255, 0.6);
     font-style: italic;
 }
 
-.download-links .single-links .link-container.loading::after {
+.download-links .link-container.loading::after {
     content: 'Loading links...';
     display: block;
     text-align: center;
@@ -1123,11 +1123,11 @@ footer .social-icons a:hover {
 }
 
 /* File Size Highlight */
-.download-links .single-links .link-container h4 {
+.download-links .link-container h4 {
     position: relative;
 }
 
-.download-links .single-links .link-container h4::after {
+.download-links .link-container h4::after {
     content: attr(data-size);
     display: inline-block;
     background: rgba(255, 65, 108, 0.2);
@@ -1141,58 +1141,58 @@ footer .social-icons a:hover {
 
 /* Responsive Design for Dynamic Links */
 @media (max-width: 768px) {
-    .download-links .single-links {
+    .download-links {
         padding: 15px;
     }
     
-    .download-links .single-links .link-container h4 {
+    .download-links .link-container h4 {
         font-size: 0.9rem;
         margin-bottom: 12px;
     }
     
-    .download-links .single-links .link-container h2 {
+    .download-links .link-container h2 {
         font-size: 1rem;
         flex-direction: column;
         gap: 8px;
     }
     
-    .download-links .single-links .f-links {
+    .download-links .f-links {
         width: 100%;
         max-width: 200px;
         margin: 2px 0;
     }
     
     /* Single link on mobile */
-    .download-links .single-links .link-container h2:has(a:only-child) .f-links {
+    .download-links .link-container h2:has(a:only-child) .f-links {
         width: 80%;
         max-width: 250px;
     }
     
     /* Multiple links on mobile */
-    .download-links .single-links .link-container h2:has(a:nth-child(3)) .f-links,
-    .download-links .single-links .link-container h2:has(a:nth-child(2)) .f-links {
+    .download-links .link-container h2:has(a:nth-child(3)) .f-links,
+    .download-links .link-container h2:has(a:nth-child(2)) .f-links {
         width: 90%;
         max-width: 280px;
     }
 }
 
 @media (max-width: 480px) {
-    .download-links .single-links .link-container {
+    .download-links .link-container {
         padding: 12px;
     }
     
-    .download-links .single-links .link-container h4 {
+    .download-links .link-container h4 {
         font-size: 0.85rem;
         padding: 0 5px;
     }
     
-    .download-links .single-links .f-links {
+    .download-links .f-links {
         padding: 7px 15px;
         font-size: 0.85rem;
         min-height: 36px;
     }
     
-    .download-links .single-links .link-container h4::after {
+    .download-links .link-container h4::after {
         display: block;
         margin: 8px auto 0 auto;
         width: fit-content;
@@ -1211,11 +1211,11 @@ footer .social-icons a:hover {
     }
 }
 
-.download-links .single-links .f-links {
+.download-links .f-links {
     animation: linkAppear 0.5s ease-out;
 }
 
 /* Stagger animation for multiple links */
-.download-links .single-links .link-container h2 .f-links:nth-child(1) { animation-delay: 0.1s; }
-.download-links .single-links .link-container h2 .f-links:nth-child(2) { animation-delay: 0.2s; }
-.download-links .single-links .link-container h2 .f-links:nth-child(3) { animation-delay: 0.3s; }
+.download-links .link-container h2 .f-links:nth-child(1) { animation-delay: 0.1s; }
+.download-links .link-container h2 .f-links:nth-child(2) { animation-delay: 0.2s; }
+.download-links .link-container h2 .f-links:nth-child(3) { animation-delay: 0.3s; }
